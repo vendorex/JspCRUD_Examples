@@ -7,6 +7,9 @@ import com.app.model.User;
 
 public class UserDaoImpl implements IUserDao {
 
+	private IUserDao dao;
+	
+	
 	public int save(User u) {
 		// TODO Auto-generated method stub
 		return 0;
