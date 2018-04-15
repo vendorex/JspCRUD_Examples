@@ -2,14 +2,15 @@ package com.app.service.impl;
 
 import java.util.List;
 
+import com.app.dao.IUserDao;
 import com.app.model.User;
 import com.app.service.IUserService;
 
 public class UserServiceImpl implements IUserService {
 
+	private IUserDao dao;
 	public int save(User u) {
-		// TODO Auto-generated method stub
-		return 0;
+		return dao.save(u);
 	}
 
 	public int update(User u) {
